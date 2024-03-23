@@ -1,95 +1,96 @@
 *{
-    color: white;
+    margin:0;
     font-family: sans-serif;
-    transition: 0.2s ease-in-out;
-    user-select: none;
+    box-sizing: border-box;
+    outline: none;
+    padding:0;
+    background-color:rgb(129, 129, 129);
+} 
+h6{
+    text-align:center;
+    font-size:12px;
 }
-
-body{
-    background: rgb(20,19,41);
-    background: linear-gradient(90deg, rgba(20,19,41,1) 0%, rgba(21,21,42,0.8371520483193278) 35%, rgba(167,169,170,0.7699251575630253) 100%);
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    text-align: center;
-    padding: 5vh;
-}
-
-.align{
-    display: flex;
+.top{
     justify-content: center;
+    height: 100vh;
     align-items: center;
+    display: flex;
 }
+.calci{
+    padding: 15px;
+    border-radius:19px;
+    grid-template-columns: repeat(4,70px);
+    box-shadow: inset 5px 5px 12px rgb(0, 0, 0),
+    5px 5px 12px rgba(88, 88, 88, 0.332);
+    background-color:rgba(51, 50, 50, 0.93);
+    display: grid;
 
-.turn-container{
-    width: 170px;
-    height: 80px;
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color:rgb(116, 116, 116);
+    box-shadow: inset -5px 5px 12px rgb(122, 122, 122),
+                inset  5px 5px 12px rgb(0, 0, 0);
+    border: none;
+    border-radius:5px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: end;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    position: relative;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
 }
-
-.turn-container h3{
-    margin: 0;
-    grid-column-start: 1;
-    grid-column-end: 3;
+button{
+    background-color: rgb(12, 12, 12);
+    height: 48px;
+    box-shadow: -5px -5px 12px rgb(82, 81, 81),
+    5px 5px 12px rgba(37, 37, 37, 0.813);
+    border: none;
+    font-size: 16px;
+    width: 48px;
+    font-size: x-large;
+    border-radius:10%;
+    margin: 8px;
+    color: rgb(255, 255, 255);
 }
-
-.turn-container .turn-box{
-    border: 3px solid #fff;
-    font-size: 1.6rem;
-    font-weight: 700;
+button:hover{
+    box-shadow: -5px -5px 12px rgb(79, 74, 74),
+    5px 5px 12px rgba(74, 70, 70, 0.813);
+    height: 48px;
+    border: 2px solid rgb(33, 33, 33);
+    margin: 8px;
+    border-radius:10%;
 }
-
-.turn-container .turn-box:nth-child(even){
-    border-right: none;
+.c{
+    background-color: rgba(105, 131, 138, 0.743);
+    height: 48px;
+    width: 48px;
+    box-shadow: -5px -5px 12px rgb(82, 80, 80),
+                    5px 5px 12px rgba(48, 47, 47, 0.813);
+    border: none;
+    margin: 8px;
+    font-size: 16px;
+    border-radius: 10%;
 }
-
-.bg{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 85px;
-    height: 40px;
-    background: rgb(63,94,251);
-    z-index: -1;
+.d{
+    height: 48px;
+    width: 48px;
+    background-color: rgba(255, 0, 0, 0.743);
+    box-shadow: -5px -5px 12px rgb(68, 68, 68),
+                    5px 5px 12px rgba(37, 37, 37, 0.813);
+    border: none;
+    border-radius: 10%;
+    margin: 8px;
+    font-size: 16px;
 }
-
-.main-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    height: 250px;
-    width: 250px;
-    margin: 30px auto;
-    border: 2px solid #fff;
-}
-
-.box{
-    cursor: pointer;
-    font-size: 2rem;
-    font-weight: 700;
-    border: 2px solid #fff;
-}
-
-.box:hover{
-    background: rgb(20,19,41);
-background: linear-gradient(90deg, rgba(20,19,41,1) 0%, rgba(121,121,145,0.8371520483193278) 35%, rgba(28,28,29,0.8847710959383753) 100%);
-
-}
-#play-again{
-    background-color: rgb(153, 0, 255);
-    padding: 10px 25px;
-    border: none ;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#play-again:hover{
-    padding: 10px 40px;
-    background-color: aqua;
+.submit{
+    width: 115px;
+    border-radius:10px;
+    box-shadow: inset -5px 5px 12px rgba(255, 255, 255, 0),
+    5px 5px 12px rgba(56, 56, 56, 0.749);
     color: black;
+    background-color:rgb(131, 130, 130);
 }
